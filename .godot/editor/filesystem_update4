@@ -1,0 +1,4 @@
+res://Debug_Level.tscn
+res://Characters/Player/Player.tscn
+res://Characters/SideScrollerPlayer/SideScrollerPlayer.tscn
+res://Characters/Player/Player.gd

@@ -1,0 +1,107 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1715087080
+Debug_Level.tscn::PackedScene::2841945061624763770::1715086003::0::1::::<><>::uid://dpi8w0le08ut4::::res://Characters/Player/Player.tscn
+icon.svg::CompressedTexture2D::5142996850056338243::1712661618::1712661625::1::::<><>::
+Player.gd::GDScript::-1::1712676857::0::1::::<>CharacterBody3D<>::
+TopDownPlayer.gd::GDScript::-1::1715026923::0::1::::<>CharacterBody3D<>::
+::res://Characters/::1715027331
+::res://Characters/Player/::1715086882
+Player.gd::GDScript::-1::1715086882::0::1::::<>CharacterBody3D<>::
+Player.tscn::PackedScene::8230654006202541259::1715086882::0::1::::<><>::res://Characters/Player/Player.gd<>uid://huwuhlkadnse::::res://GameArt/Player Sprite Animations/Crouch-Idle/Player Crouch-Idle 48x48.png<>uid://caqgmfig5ntde::::res://GameArt/Player Sprite Animations/Crouch-Walk/player crouch-walk 48x48.png<>uid://44hig510l8as::::res://GameArt/Player Sprite Animations/Player Jump/player jump 48x48.png<>uid://qsphliegd5bu::::res://GameArt/Player Sprite Animations/Player Idle/Player Idle 48x48.png<>uid://dp3lenu2vwa36::::res://GameArt/Player Sprite Animations/Player Land/player land 48x48.png<>uid://burom4cx1qj5m::::res://GameArt/Player Sprite Animations/Player Run/player run 48x48.png<>uid://4bg2hw4p2epf::::res://GameArt/Player Sprite Animations/Player Shoot 2H/player shoot 2H 48x48.png<>uid://c3p05j2mqc5ym::::res://GameArt/Player Sprite Animations/PlayerWalk/PlayerWalk 48x48.png
+::res://Characters/SideScrollerPlayer/::1715086003
+Player_Camera.gd::GDScript::-1::1713906461::0::1::::<>Camera3D<>::
+SideScrollerPlayer.gd::GDScript::-1::1714497607::0::1::::<>CharacterBody3D<>::
+SideScrollerPlayer.tscn::PackedScene::1536206319346271150::1715086003::0::1::::<><>::res://Characters/SideScrollerPlayer/SideScrollerPlayer.gd<>uid://c3p05j2mqc5ym::::res://GameArt/Player Sprite Animations/PlayerWalk/PlayerWalk 48x48.png<>uid://huwuhlkadnse::::res://GameArt/Player Sprite Animations/Crouch-Idle/Player Crouch-Idle 48x48.png<>uid://caqgmfig5ntde::::res://GameArt/Player Sprite Animations/Crouch-Walk/player crouch-walk 48x48.png<>uid://44hig510l8as::::res://GameArt/Player Sprite Animations/Player Jump/player jump 48x48.png<>uid://4bg2hw4p2epf::::res://GameArt/Player Sprite Animations/Player Shoot 2H/player shoot 2H 48x48.png<>uid://qsphliegd5bu::::res://GameArt/Player Sprite Animations/Player Idle/Player Idle 48x48.png<>uid://dp3lenu2vwa36::::res://GameArt/Player Sprite Animations/Player Land/player land 48x48.png<>uid://burom4cx1qj5m::::res://GameArt/Player Sprite Animations/Player Run/player run 48x48.png<>uid://dqk0qlfvo1kvs::::res://GameObjects/Weapons/Guns/Rifles/Steam_Rifle.tscn
+::res://GameArt/::1712851971
+::res://GameArt/Player Sprite Animations/::1712844773
+::res://GameArt/Player Sprite Animations/Air Spin/::1714772225
+player air spin 48x48.png::CompressedTexture2D::1349800534325863293::1712664760::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Basic Sword Attack 1/::1714772225
+player sword atk 64x64.png::CompressedTexture2D::8984918962260817229::1712664768::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Crouch-Idle/::1714772225
+Player Crouch-Idle 48x48.png::CompressedTexture2D::533981335377169716::1712664760::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Crouch-Walk/::1714772225
+player crouch-walk 48x48.png::CompressedTexture2D::4806257418223037758::1712664760::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Ledge Grab-Climb/::1714772225
+player ledge climb 48x48.png::CompressedTexture2D::1896441882658183779::1712664759::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Character Sprites/::1712844691
+::res://GameArt/Player Sprite Animations/Player Climb-Back/::1714772225
+player climb-back 48x48.png::CompressedTexture2D::3260183181132256123::1712664776::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Climb-Side/::1714772225
+Player Side-Climb 48x48.png::CompressedTexture2D::5752938971838348846::1712664776::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Climb-Side/old climb/::1714772225
+Player Side-Climb 48x48.png::CompressedTexture2D::1330082884149593794::1712664776::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Death/::1714772225
+Player Death 64x64.png::CompressedTexture2D::5150758102107781687::1712664768::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Hurt-Damaged/::1714772225
+Player Hurt 48x48.png::CompressedTexture2D::2273539134091802858::1712664768::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Idle/::1714772225
+Player Idle 48x48.png::CompressedTexture2D::1161104143535624614::1712664752::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Jump/::1714772225
+player jump 48x48.png::CompressedTexture2D::2095783088370710334::1712664752::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Katana Air Attack/::1714772225
+player katana air attack (upper body) 80x64.png::CompressedTexture2D::7783188319686607551::1712664776::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Katana Attack-Sheathe/::1714772225
+player katana attack-sheathe 80x64.png::CompressedTexture2D::2865298895781521108::1712664776::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Katana Continuous Attack/::1714772225
+player katana continuous attack 80x64.png::CompressedTexture2D::4804106479238236273::1712664777::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Katana Run/::1714772225
+player katana run 48x48.png::CompressedTexture2D::4023198250099719156::1712664777::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Katana Run Attack/::1714772225
+player katana running attack (upper body).png::CompressedTexture2D::6104490244406110519::1712664776::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Land/::1714772226
+player land 48x48.png::CompressedTexture2D::8270573027814838711::1712664752::1714772226::1::::<><>::
+PlayerWalk 48x48.png::CompressedTexture2D::3547249625286104504::1712697787::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Punch/::1714772226
+Player Punch 64x64.png::CompressedTexture2D::6858721612640526578::1712664768::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Punch Cross/::1714772226
+Player Punch Cross 64x64.png::CompressedTexture2D::682224421837862422::1712664776::1714772226::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Punch Jab/::1714772225
+Player Jab 48x48.png::CompressedTexture2D::1279629088833597547::1712664776::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Roll/::1714772225
+Player Roll 48x48.png::CompressedTexture2D::1977929185608414605::1712664759::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Run/::1714772225
+player run 48x48.png::CompressedTexture2D::3826164973045516972::1712664752::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Running Shooting-Running Aiming/::1714772225
+Player Running Aiming 48x48.png::CompressedTexture2D::3941796619320536692::1712664776::1714772225::1::::<><>::
+Player Running Shooting 48x48.png::CompressedTexture2D::7676317517583155505::1712664776::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Shoot 2H/::1714772225
+player shoot 2H 48x48.png::CompressedTexture2D::2037953764636916731::1712664776::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Sword Idle/::1714772225
+Player Sword Idle 48x48.png::CompressedTexture2D::9105524464478101120::1712664768::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Sword Run/::1714772225
+Player Sword Run 48x48.png::CompressedTexture2D::5280734838181415245::1712664768::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Wall Land/::1714772225
+player wall land 48x48.png::CompressedTexture2D::4631815078107304086::1712664752::1714772225::1::::<><>::
+Player Wall Land (left) 48x48.png::CompressedTexture2D::3052640290281091141::1712664752::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Player Wall Slide/::1714772225
+player wall slide 48x48.png::CompressedTexture2D::1242662288924990888::1712664752::1714772225::1::::<><>::
+player wall slide (left) 48x48.png::CompressedTexture2D::8994038309778411333::1712664752::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/PlayerIdlePushPull/::1714772225
+player push idle 48x48.png::CompressedTexture2D::5486413707978081036::1712664768::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/PlayerWalk/::1714772225
+PlayerWalk 48x48.png::CompressedTexture2D::6770666669184905092::1712664768::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Pull/::1714772225
+Player Pull 48x48.png::CompressedTexture2D::977247791206414762::1712664759::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Push/::1714772225
+player push 48x48.png::CompressedTexture2D::5611029698106106739::1712664760::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Super Basic Tilemap/::1714772225
+160x160 background tilemap.png::CompressedTexture2D::3439096444934229429::1712664752::1714772225::1::::<><>::
+Basic Tilemap.png::CompressedTexture2D::6679959107236800368::1712664752::1714772225::1::::<><>::
+::res://GameArt/Player Sprite Animations/Sword Stab/::1714772225
+Player Sword Stab 96x48.png::CompressedTexture2D::3783574462159517065::1712664768::1714772225::1::::<><>::
+::res://GameArt/Weapons/::1712851976
+::res://GameArt/Weapons/Guns/::1712851980
+::res://GameArt/Weapons/Guns/Rifles/::1714772225
+Steam_Rifle_Shoot.png::CompressedTexture2D::924251688610322433::1712851936::1714772225::1::::<><>::
+::res://GameObjects/::1712852341
+block.tscn::PackedScene::3752588410356206487::1712666779::0::1::::<><>::
+::res://GameObjects/Weapons/::1712852343
+::res://GameObjects/Weapons/Guns/::1712852347
+::res://GameObjects/Weapons/Guns/Rifles/::1715027130
+AnimatedSprite3D.gd::GDScript::-1::1712867946::0::1::::<>AnimatedSprite3D<>::
+Steam_Rifle.gd::GDScript::-1::1714842477::0::1::::<>StaticBody3D<>::
+Steam_Rifle.tscn::PackedScene::8304474410804819476::1715027130::0::1::::<><>::res://GameObjects/Weapons/Guns/Rifles/Steam_Rifle.gd<>uid://nfyj4tbae3ib::::res://GameArt/Weapons/Guns/Rifles/Steam_Rifle_Shoot.png
+Steam_Rifle_Sprite.gd::GDScript::-1::1712859707::0::1::::<>RefCounted<>::
+::res://Levels/::1712677128
+debug_level.tscn::PackedScene::521262551567154775::1712677128::0::1::::<><>::

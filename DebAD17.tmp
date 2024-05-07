@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bgqwojp1osw6u"]
+
+[ext_resource type="PackedScene" uid="uid://v5fdgikuqeew" path="res://Characters/Player.tscn" id="1_yueox"]
+[ext_resource type="PackedScene" uid="uid://dqk0qlfvo1kvs" path="res://GameObjects/Weapons/Guns/Rifles/Steam_Rifle.tscn" id="2_5hnmn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_py7pb"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_lxja3"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00378382, 0, -0.00235486)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(5, 0, 0, 0, 0.1, 0, 0, 0, 5, 0, 0, 0)
+shape = SubResource("BoxShape3D_py7pb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(4.9792, 0, 0, 0, 0.0995841, 0, 0, 0, 4.9792, 0, 0, 0)
+mesh = SubResource("BoxMesh_lxja3")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 5.12112, 3.25669)
+
+[node name="Player" parent="." instance=ExtResource("1_yueox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.434326, 0.637105)
+
+[node name="Steam_Rifle" parent="." instance=ExtResource("2_5hnmn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.390261, 0.671418)

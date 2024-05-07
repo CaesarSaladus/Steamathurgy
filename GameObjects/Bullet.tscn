@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdcmp15rq5hg7"]
+
+[ext_resource type="Script" path="res://GameObjects/Bullet.gd" id="1_fd1bb"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_p4pm4"]
+radius = 0.1
+height = 0.1
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_fd1bb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0493986, 0, 0, 0, 0.1, 0, 0, 0, 0.0421569, 0, 0, 0)
+mesh = SubResource("SphereMesh_p4pm4")

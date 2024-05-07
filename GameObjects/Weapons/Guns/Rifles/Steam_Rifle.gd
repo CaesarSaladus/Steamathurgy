@@ -1,28 +1,33 @@
 extends StaticBody3D
 # Called when the node enters the scene tree for the first time.
-@onready var animated_Sprite : AnimatedSprite3D = $AnimatedSprite3D
-@onready var player_Camera : Camera3D = $Player_Camera
-@onready var player_Parent = get_parent()
+
+@export var Bullet : PackedScene
+@onready var rof_timer = $Timer
+var can_shoot = true
+@export var muzzle_speed = 30
+@export var millis_between_shots = 0.1
 
 func _ready():
-	pass	
+	rof_timer.wait_time = millis_between_shots
+	pass
+	
+	
 func _process(delta):
 	pass
 	
-func _on_player_mouse_position_changed(cursor_Pos: Vector3):
-	if cursor_Pos != null:
-		var direction = cursor_Pos - global_position
+	
+func shoot():
+	if can_shoot:
+		var new_bullet = Bullet.instantiate()
+		new_bullet.global_transform = $AnimatedSprite3D/Gun_Barrel.global_transform
+		new_bullet.speed = muzzle_speed
+		var scene_root = get_tree().get_root().get_children()[0]
+		scene_root.add_child(new_bullet)
+		can_shoot = false
+		rof_timer.start()
+	
 
-		var angle = direction.x/direction.y
-		angle = atan(angle)
-		var rotation_degrees = rad_to_deg(angle)
 
-		if rotation_degrees > 0 and rotation_degrees >180:
-			animated_Sprite.flip_h = true
-		elif rotation_degrees > 0 and rotation_degrees < 180:
-			animated_Sprite.flip_h = false
-		
-		rotation = Vector3(0, 0, rotation_degrees)
-		print(rotation)
-		print("Cursor: X", cursor_Pos.x, "Y ", cursor_Pos.y, "Z ", cursor_Pos.z)
-		print("Player: X ", global_position.x, "Y ", global_position.y, "Z ", global_position.z)
+func _on_timer_timeout():
+	print("Can shoot again")
+	can_shoot = true

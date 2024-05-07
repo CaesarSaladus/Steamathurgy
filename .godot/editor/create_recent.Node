@@ -1,8 +1,11 @@
+Timer
 MeshInstance3D
+Node3D
+Marker3D
+Node
+AnimatedSprite3D
 StaticBody3D
 Camera3D
-Marker3D
-AnimatedSprite3D
 CollisionShape3D
 CharacterBody3D
 AnimationPlayer
@@ -10,5 +13,3 @@ Marker2D
 AnimatedSprite2D
 CollisionShape2D
 StaticBody2D
-SpringArm3D
-DirectionalLight3D

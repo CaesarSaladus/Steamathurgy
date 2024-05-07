@@ -2,3 +2,9 @@ res://Debug_Level.tscn
 res://Characters/Player/Player.tscn
 res://Characters/SideScrollerPlayer/SideScrollerPlayer.tscn
 res://Characters/Player/Player.gd
+res://Characters/Player/Gun Controller.gd
+res://Characters/Player/GunController.gd
+res://GameObjects/Weapons/Guns/Rifles/Steam_Rifle.tscn
+res://GameObjects/Weapons/Guns/Rifles/Steam_Rifle.gd
+res://GameObjects/Bullet.tscn
+res://GameObjects/Bullet.gd

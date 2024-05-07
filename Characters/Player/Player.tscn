@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://dpi8w0le08ut4"]
+[gd_scene load_steps=83 format=3 uid="uid://dpi8w0le08ut4"]
 
 [ext_resource type="Script" path="res://Characters/Player/Player.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://huwuhlkadnse" path="res://GameArt/Player Sprite Animations/Crouch-Idle/Player Crouch-Idle 48x48.png" id="2_cqgo0"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://burom4cx1qj5m" path="res://GameArt/Player Sprite Animations/Player Run/player run 48x48.png" id="7_p0qa3"]
 [ext_resource type="Texture2D" uid="uid://4bg2hw4p2epf" path="res://GameArt/Player Sprite Animations/Player Shoot 2H/player shoot 2H 48x48.png" id="8_ircjv"]
 [ext_resource type="Texture2D" uid="uid://c3p05j2mqc5ym" path="res://GameArt/Player Sprite Animations/PlayerWalk/PlayerWalk 48x48.png" id="9_ld6on"]
+[ext_resource type="Script" path="res://Characters/Player/GunController.gd" id="10_ymcc7"]
+[ext_resource type="PackedScene" uid="uid://dqk0qlfvo1kvs" path="res://GameObjects/Weapons/Guns/Rifles/Steam_Rifle.tscn" id="11_tdur0"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_o4456"]
 
@@ -560,11 +562,18 @@ texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_v0gkk")
 animation = &"Player_Idle"
 
+[node name="PlayerHand" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.88902, 0.220695)
+
 [node name="CameraRig" type="Marker3D" parent="."]
 
-[node name="Camera3D" type="Camera3D" parent="CameraRig"]
+[node name="PlayerCamera" type="Camera3D" parent="CameraRig"]
 transform = Transform3D(1, 0, 0, 0, 0.834463, 0.551063, 0, -0.551063, 0.834463, 0, 4.15235, 3.65749)
 near = 0.01
 
 [node name="Cursor" type="MeshInstance3D" parent="."]
 mesh = SubResource("5")
+
+[node name="GunController" type="Node3D" parent="."]
+script = ExtResource("10_ymcc7")
+StartingWeapon = ExtResource("11_tdur0")

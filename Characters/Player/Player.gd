@@ -16,9 +16,10 @@ var move_direction = Vector3()
 @onready var crouch_toggled : bool = false
 
 @onready var Animated_Sprite : AnimatedSprite3D = $AnimatedSprite3D
-@onready var camera = $CameraRig/Camera3D
+@onready var camera = $CameraRig/PlayerCamera
 @onready var camera_rig = $CameraRig
 @onready var cursor= $Cursor
+@onready var GunController = $GunController
 
 
 func _ready():
@@ -33,6 +34,7 @@ func _physics_process(delta):
 	rotate_camera(delta)
 	look_at_cursor()
 	movement(delta)
+	shooting()
 	set_velocity(velocity)
 	set_up_direction(Vector3.UP)
 	set_floor_stop_on_slope_enabled(true)
@@ -64,15 +66,13 @@ func look_at_cursor():
 	var to = from + camera.project_ray_normal(mouse_pos) * ray_length
 	var cursor_pos = dropPlane.intersects_ray(from,to)
 	
-	# Set the position of cursor visualizer
-	cursor.global_transform.origin = cursor_pos + Vector3(0,1,0)
+	if cursor_pos != null:
+		cursor.global_transform.origin = cursor_pos + Vector3(0,1,0)
 	
 	# Make player look at the cursor
 	#look_at(cursor_pos, Vector3.UP)
 
-
 func movement(delta):
-	
 	if not is_on_floor():
 		velocity.y += get_gravity() * delta
 	if is_on_floor():
@@ -129,7 +129,12 @@ func check_falling() -> bool:
 
 func jump():
 	velocity.y = jump_velocity
-		
+
+func shooting():
+	if Input.is_action_just_pressed("Gun_Shoot"):
+		GunController.shoot()
+		print("Shoot was pressed")
+	
 func update_animations(velocity):
 	if velocity.x != 0 and is_on_floor() and walking_toggled and !crouch_toggled or velocity.z != 0 and is_on_floor() and walking_toggled and !crouch_toggled:
 		Animated_Sprite.play("Player_Walk")
